@@ -1,0 +1,3 @@
+/mnt/c/Users/53181/Documents/vsCode/server/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/53181/Documents/vsCode/server/CMakeFiles/Demo1.dir
+/mnt/c/Users/53181/Documents/vsCode/server/CMakeFiles/edit_cache.dir
