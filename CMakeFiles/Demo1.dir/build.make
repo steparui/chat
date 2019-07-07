@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/53181/Documents/vsCode/server
+CMAKE_SOURCE_DIR = /mnt/c/Users/53181/Desktop/privateCode/server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/53181/Documents/vsCode/server
+CMAKE_BINARY_DIR = /mnt/c/Users/53181/Desktop/privateCode/server
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Demo1.dir/depend.make
@@ -57,18 +57,42 @@ include CMakeFiles/Demo1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Demo1.dir/flags.make
 
+CMakeFiles/Demo1.dir/acceptor.cpp.o: CMakeFiles/Demo1.dir/flags.make
+CMakeFiles/Demo1.dir/acceptor.cpp.o: acceptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/53181/Desktop/privateCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Demo1.dir/acceptor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Demo1.dir/acceptor.cpp.o -c /mnt/c/Users/53181/Desktop/privateCode/server/acceptor.cpp
+
+CMakeFiles/Demo1.dir/acceptor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Demo1.dir/acceptor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/53181/Desktop/privateCode/server/acceptor.cpp > CMakeFiles/Demo1.dir/acceptor.cpp.i
+
+CMakeFiles/Demo1.dir/acceptor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Demo1.dir/acceptor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/53181/Desktop/privateCode/server/acceptor.cpp -o CMakeFiles/Demo1.dir/acceptor.cpp.s
+
+CMakeFiles/Demo1.dir/acceptor.cpp.o.requires:
+
+.PHONY : CMakeFiles/Demo1.dir/acceptor.cpp.o.requires
+
+CMakeFiles/Demo1.dir/acceptor.cpp.o.provides: CMakeFiles/Demo1.dir/acceptor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/acceptor.cpp.o.provides.build
+.PHONY : CMakeFiles/Demo1.dir/acceptor.cpp.o.provides
+
+CMakeFiles/Demo1.dir/acceptor.cpp.o.provides.build: CMakeFiles/Demo1.dir/acceptor.cpp.o
+
+
 CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.o: CMakeFiles/Demo1.dir/flags.make
 CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.o: epoll_demultiplexer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/53181/Documents/vsCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.o -c /mnt/c/Users/53181/Documents/vsCode/server/epoll_demultiplexer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/53181/Desktop/privateCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.o -c /mnt/c/Users/53181/Desktop/privateCode/server/epoll_demultiplexer.cpp
 
 CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/53181/Documents/vsCode/server/epoll_demultiplexer.cpp > CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/53181/Desktop/privateCode/server/epoll_demultiplexer.cpp > CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.i
 
 CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/53181/Documents/vsCode/server/epoll_demultiplexer.cpp -o CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/53181/Desktop/privateCode/server/epoll_demultiplexer.cpp -o CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.s
 
 CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.o.requires:
 
@@ -81,66 +105,18 @@ CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.o.provides: CMakeFiles/Demo1.dir/ep
 CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.o.provides.build: CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.o
 
 
-CMakeFiles/Demo1.dir/listen_handler.cpp.o: CMakeFiles/Demo1.dir/flags.make
-CMakeFiles/Demo1.dir/listen_handler.cpp.o: listen_handler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/53181/Documents/vsCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Demo1.dir/listen_handler.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Demo1.dir/listen_handler.cpp.o -c /mnt/c/Users/53181/Documents/vsCode/server/listen_handler.cpp
-
-CMakeFiles/Demo1.dir/listen_handler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Demo1.dir/listen_handler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/53181/Documents/vsCode/server/listen_handler.cpp > CMakeFiles/Demo1.dir/listen_handler.cpp.i
-
-CMakeFiles/Demo1.dir/listen_handler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Demo1.dir/listen_handler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/53181/Documents/vsCode/server/listen_handler.cpp -o CMakeFiles/Demo1.dir/listen_handler.cpp.s
-
-CMakeFiles/Demo1.dir/listen_handler.cpp.o.requires:
-
-.PHONY : CMakeFiles/Demo1.dir/listen_handler.cpp.o.requires
-
-CMakeFiles/Demo1.dir/listen_handler.cpp.o.provides: CMakeFiles/Demo1.dir/listen_handler.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/listen_handler.cpp.o.provides.build
-.PHONY : CMakeFiles/Demo1.dir/listen_handler.cpp.o.provides
-
-CMakeFiles/Demo1.dir/listen_handler.cpp.o.provides.build: CMakeFiles/Demo1.dir/listen_handler.cpp.o
-
-
-CMakeFiles/Demo1.dir/reactor.cpp.o: CMakeFiles/Demo1.dir/flags.make
-CMakeFiles/Demo1.dir/reactor.cpp.o: reactor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/53181/Documents/vsCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Demo1.dir/reactor.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Demo1.dir/reactor.cpp.o -c /mnt/c/Users/53181/Documents/vsCode/server/reactor.cpp
-
-CMakeFiles/Demo1.dir/reactor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Demo1.dir/reactor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/53181/Documents/vsCode/server/reactor.cpp > CMakeFiles/Demo1.dir/reactor.cpp.i
-
-CMakeFiles/Demo1.dir/reactor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Demo1.dir/reactor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/53181/Documents/vsCode/server/reactor.cpp -o CMakeFiles/Demo1.dir/reactor.cpp.s
-
-CMakeFiles/Demo1.dir/reactor.cpp.o.requires:
-
-.PHONY : CMakeFiles/Demo1.dir/reactor.cpp.o.requires
-
-CMakeFiles/Demo1.dir/reactor.cpp.o.provides: CMakeFiles/Demo1.dir/reactor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/reactor.cpp.o.provides.build
-.PHONY : CMakeFiles/Demo1.dir/reactor.cpp.o.provides
-
-CMakeFiles/Demo1.dir/reactor.cpp.o.provides.build: CMakeFiles/Demo1.dir/reactor.cpp.o
-
-
 CMakeFiles/Demo1.dir/reactor_impl.cpp.o: CMakeFiles/Demo1.dir/flags.make
 CMakeFiles/Demo1.dir/reactor_impl.cpp.o: reactor_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/53181/Documents/vsCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Demo1.dir/reactor_impl.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Demo1.dir/reactor_impl.cpp.o -c /mnt/c/Users/53181/Documents/vsCode/server/reactor_impl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/53181/Desktop/privateCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Demo1.dir/reactor_impl.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Demo1.dir/reactor_impl.cpp.o -c /mnt/c/Users/53181/Desktop/privateCode/server/reactor_impl.cpp
 
 CMakeFiles/Demo1.dir/reactor_impl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Demo1.dir/reactor_impl.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/53181/Documents/vsCode/server/reactor_impl.cpp > CMakeFiles/Demo1.dir/reactor_impl.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/53181/Desktop/privateCode/server/reactor_impl.cpp > CMakeFiles/Demo1.dir/reactor_impl.cpp.i
 
 CMakeFiles/Demo1.dir/reactor_impl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Demo1.dir/reactor_impl.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/53181/Documents/vsCode/server/reactor_impl.cpp -o CMakeFiles/Demo1.dir/reactor_impl.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/53181/Desktop/privateCode/server/reactor_impl.cpp -o CMakeFiles/Demo1.dir/reactor_impl.cpp.s
 
 CMakeFiles/Demo1.dir/reactor_impl.cpp.o.requires:
 
@@ -155,16 +131,16 @@ CMakeFiles/Demo1.dir/reactor_impl.cpp.o.provides.build: CMakeFiles/Demo1.dir/rea
 
 CMakeFiles/Demo1.dir/server.cpp.o: CMakeFiles/Demo1.dir/flags.make
 CMakeFiles/Demo1.dir/server.cpp.o: server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/53181/Documents/vsCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Demo1.dir/server.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Demo1.dir/server.cpp.o -c /mnt/c/Users/53181/Documents/vsCode/server/server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/53181/Desktop/privateCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Demo1.dir/server.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Demo1.dir/server.cpp.o -c /mnt/c/Users/53181/Desktop/privateCode/server/server.cpp
 
 CMakeFiles/Demo1.dir/server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Demo1.dir/server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/53181/Documents/vsCode/server/server.cpp > CMakeFiles/Demo1.dir/server.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/53181/Desktop/privateCode/server/server.cpp > CMakeFiles/Demo1.dir/server.cpp.i
 
 CMakeFiles/Demo1.dir/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Demo1.dir/server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/53181/Documents/vsCode/server/server.cpp -o CMakeFiles/Demo1.dir/server.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/53181/Desktop/privateCode/server/server.cpp -o CMakeFiles/Demo1.dir/server.cpp.s
 
 CMakeFiles/Demo1.dir/server.cpp.o.requires:
 
@@ -179,16 +155,16 @@ CMakeFiles/Demo1.dir/server.cpp.o.provides.build: CMakeFiles/Demo1.dir/server.cp
 
 CMakeFiles/Demo1.dir/socket_handler.cpp.o: CMakeFiles/Demo1.dir/flags.make
 CMakeFiles/Demo1.dir/socket_handler.cpp.o: socket_handler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/53181/Documents/vsCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Demo1.dir/socket_handler.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Demo1.dir/socket_handler.cpp.o -c /mnt/c/Users/53181/Documents/vsCode/server/socket_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/53181/Desktop/privateCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Demo1.dir/socket_handler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Demo1.dir/socket_handler.cpp.o -c /mnt/c/Users/53181/Desktop/privateCode/server/socket_handler.cpp
 
 CMakeFiles/Demo1.dir/socket_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Demo1.dir/socket_handler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/53181/Documents/vsCode/server/socket_handler.cpp > CMakeFiles/Demo1.dir/socket_handler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/53181/Desktop/privateCode/server/socket_handler.cpp > CMakeFiles/Demo1.dir/socket_handler.cpp.i
 
 CMakeFiles/Demo1.dir/socket_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Demo1.dir/socket_handler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/53181/Documents/vsCode/server/socket_handler.cpp -o CMakeFiles/Demo1.dir/socket_handler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/53181/Desktop/privateCode/server/socket_handler.cpp -o CMakeFiles/Demo1.dir/socket_handler.cpp.s
 
 CMakeFiles/Demo1.dir/socket_handler.cpp.o.requires:
 
@@ -201,27 +177,77 @@ CMakeFiles/Demo1.dir/socket_handler.cpp.o.provides: CMakeFiles/Demo1.dir/socket_
 CMakeFiles/Demo1.dir/socket_handler.cpp.o.provides.build: CMakeFiles/Demo1.dir/socket_handler.cpp.o
 
 
+CMakeFiles/Demo1.dir/socket_internal.cpp.o: CMakeFiles/Demo1.dir/flags.make
+CMakeFiles/Demo1.dir/socket_internal.cpp.o: socket_internal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/53181/Desktop/privateCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Demo1.dir/socket_internal.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Demo1.dir/socket_internal.cpp.o -c /mnt/c/Users/53181/Desktop/privateCode/server/socket_internal.cpp
+
+CMakeFiles/Demo1.dir/socket_internal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Demo1.dir/socket_internal.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/53181/Desktop/privateCode/server/socket_internal.cpp > CMakeFiles/Demo1.dir/socket_internal.cpp.i
+
+CMakeFiles/Demo1.dir/socket_internal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Demo1.dir/socket_internal.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/53181/Desktop/privateCode/server/socket_internal.cpp -o CMakeFiles/Demo1.dir/socket_internal.cpp.s
+
+CMakeFiles/Demo1.dir/socket_internal.cpp.o.requires:
+
+.PHONY : CMakeFiles/Demo1.dir/socket_internal.cpp.o.requires
+
+CMakeFiles/Demo1.dir/socket_internal.cpp.o.provides: CMakeFiles/Demo1.dir/socket_internal.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/socket_internal.cpp.o.provides.build
+.PHONY : CMakeFiles/Demo1.dir/socket_internal.cpp.o.provides
+
+CMakeFiles/Demo1.dir/socket_internal.cpp.o.provides.build: CMakeFiles/Demo1.dir/socket_internal.cpp.o
+
+
+CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o: CMakeFiles/Demo1.dir/flags.make
+CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o: tempCodeRunnerFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/53181/Desktop/privateCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o -c /mnt/c/Users/53181/Desktop/privateCode/server/tempCodeRunnerFile.cpp
+
+CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/53181/Desktop/privateCode/server/tempCodeRunnerFile.cpp > CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.i
+
+CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/53181/Desktop/privateCode/server/tempCodeRunnerFile.cpp -o CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.s
+
+CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o.requires:
+
+.PHONY : CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o.requires
+
+CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o.provides: CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o.provides.build
+.PHONY : CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o.provides
+
+CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o.provides.build: CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o
+
+
 # Object files for target Demo1
 Demo1_OBJECTS = \
+"CMakeFiles/Demo1.dir/acceptor.cpp.o" \
 "CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.o" \
-"CMakeFiles/Demo1.dir/listen_handler.cpp.o" \
-"CMakeFiles/Demo1.dir/reactor.cpp.o" \
 "CMakeFiles/Demo1.dir/reactor_impl.cpp.o" \
 "CMakeFiles/Demo1.dir/server.cpp.o" \
-"CMakeFiles/Demo1.dir/socket_handler.cpp.o"
+"CMakeFiles/Demo1.dir/socket_handler.cpp.o" \
+"CMakeFiles/Demo1.dir/socket_internal.cpp.o" \
+"CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o"
 
 # External object files for target Demo1
 Demo1_EXTERNAL_OBJECTS =
 
+Demo1: CMakeFiles/Demo1.dir/acceptor.cpp.o
 Demo1: CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.o
-Demo1: CMakeFiles/Demo1.dir/listen_handler.cpp.o
-Demo1: CMakeFiles/Demo1.dir/reactor.cpp.o
 Demo1: CMakeFiles/Demo1.dir/reactor_impl.cpp.o
 Demo1: CMakeFiles/Demo1.dir/server.cpp.o
 Demo1: CMakeFiles/Demo1.dir/socket_handler.cpp.o
+Demo1: CMakeFiles/Demo1.dir/socket_internal.cpp.o
+Demo1: CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o
 Demo1: CMakeFiles/Demo1.dir/build.make
 Demo1: CMakeFiles/Demo1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/53181/Documents/vsCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Demo1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/53181/Desktop/privateCode/server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Demo1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Demo1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -229,12 +255,13 @@ CMakeFiles/Demo1.dir/build: Demo1
 
 .PHONY : CMakeFiles/Demo1.dir/build
 
+CMakeFiles/Demo1.dir/requires: CMakeFiles/Demo1.dir/acceptor.cpp.o.requires
 CMakeFiles/Demo1.dir/requires: CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.o.requires
-CMakeFiles/Demo1.dir/requires: CMakeFiles/Demo1.dir/listen_handler.cpp.o.requires
-CMakeFiles/Demo1.dir/requires: CMakeFiles/Demo1.dir/reactor.cpp.o.requires
 CMakeFiles/Demo1.dir/requires: CMakeFiles/Demo1.dir/reactor_impl.cpp.o.requires
 CMakeFiles/Demo1.dir/requires: CMakeFiles/Demo1.dir/server.cpp.o.requires
 CMakeFiles/Demo1.dir/requires: CMakeFiles/Demo1.dir/socket_handler.cpp.o.requires
+CMakeFiles/Demo1.dir/requires: CMakeFiles/Demo1.dir/socket_internal.cpp.o.requires
+CMakeFiles/Demo1.dir/requires: CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o.requires
 
 .PHONY : CMakeFiles/Demo1.dir/requires
 
@@ -243,6 +270,6 @@ CMakeFiles/Demo1.dir/clean:
 .PHONY : CMakeFiles/Demo1.dir/clean
 
 CMakeFiles/Demo1.dir/depend:
-	cd /mnt/c/Users/53181/Documents/vsCode/server && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/53181/Documents/vsCode/server /mnt/c/Users/53181/Documents/vsCode/server /mnt/c/Users/53181/Documents/vsCode/server /mnt/c/Users/53181/Documents/vsCode/server /mnt/c/Users/53181/Documents/vsCode/server/CMakeFiles/Demo1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/53181/Desktop/privateCode/server && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/53181/Desktop/privateCode/server /mnt/c/Users/53181/Desktop/privateCode/server /mnt/c/Users/53181/Desktop/privateCode/server /mnt/c/Users/53181/Desktop/privateCode/server /mnt/c/Users/53181/Desktop/privateCode/server/CMakeFiles/Demo1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Demo1.dir/depend
 

@@ -4,14 +4,16 @@
 #include "event_handler.h" 
 #include "event.h"
 
-class ListenHandler : public EventHandler
+class ReactorImpl;
+
+class Acceptor : public EventHandler
 {
 public:
-    ListenHandler(Handle fd);
-    virtual ~ListenHandler();
+    Acceptor(Handle fd, ReactorImpl* reactorPtr);
+    virtual ~Acceptor();
     virtual Handle get_handle() const
     {
-        return _listen_fd;
+        return m_serverId;
     }
 
     virtual void handle_read();
@@ -19,7 +21,8 @@ public:
     virtual void handle_error();
 
 private:
-    Handle _listen_fd;
+    Handle m_serverId;
+    ReactorImpl* m_reactorPtr;  // to do weak ptr
 };
 
 #endif

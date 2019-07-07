@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/53181/Documents/vsCode/server
+CMAKE_SOURCE_DIR = /mnt/c/Users/53181/Desktop/privateCode/server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/53181/Documents/vsCode/server
+CMAKE_BINARY_DIR = /mnt/c/Users/53181/Desktop/privateCode/server
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/53181/Documents/vsCode/server/CMakeFiles /mnt/c/Users/53181/Documents/vsCode/server/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/53181/Desktop/privateCode/server/CMakeFiles /mnt/c/Users/53181/Desktop/privateCode/server/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/53181/Documents/vsCode/server/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/53181/Desktop/privateCode/server/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ Demo1/fast:
 	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/build
 .PHONY : Demo1/fast
 
+acceptor.o: acceptor.cpp.o
+
+.PHONY : acceptor.o
+
+# target to build an object file
+acceptor.cpp.o:
+	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/acceptor.cpp.o
+.PHONY : acceptor.cpp.o
+
+acceptor.i: acceptor.cpp.i
+
+.PHONY : acceptor.i
+
+# target to preprocess a source file
+acceptor.cpp.i:
+	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/acceptor.cpp.i
+.PHONY : acceptor.cpp.i
+
+acceptor.s: acceptor.cpp.s
+
+.PHONY : acceptor.s
+
+# target to generate assembly for a file
+acceptor.cpp.s:
+	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/acceptor.cpp.s
+.PHONY : acceptor.cpp.s
+
 epoll_demultiplexer.o: epoll_demultiplexer.cpp.o
 
 .PHONY : epoll_demultiplexer.o
@@ -149,60 +176,6 @@ epoll_demultiplexer.s: epoll_demultiplexer.cpp.s
 epoll_demultiplexer.cpp.s:
 	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/epoll_demultiplexer.cpp.s
 .PHONY : epoll_demultiplexer.cpp.s
-
-listen_handler.o: listen_handler.cpp.o
-
-.PHONY : listen_handler.o
-
-# target to build an object file
-listen_handler.cpp.o:
-	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/listen_handler.cpp.o
-.PHONY : listen_handler.cpp.o
-
-listen_handler.i: listen_handler.cpp.i
-
-.PHONY : listen_handler.i
-
-# target to preprocess a source file
-listen_handler.cpp.i:
-	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/listen_handler.cpp.i
-.PHONY : listen_handler.cpp.i
-
-listen_handler.s: listen_handler.cpp.s
-
-.PHONY : listen_handler.s
-
-# target to generate assembly for a file
-listen_handler.cpp.s:
-	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/listen_handler.cpp.s
-.PHONY : listen_handler.cpp.s
-
-reactor.o: reactor.cpp.o
-
-.PHONY : reactor.o
-
-# target to build an object file
-reactor.cpp.o:
-	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/reactor.cpp.o
-.PHONY : reactor.cpp.o
-
-reactor.i: reactor.cpp.i
-
-.PHONY : reactor.i
-
-# target to preprocess a source file
-reactor.cpp.i:
-	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/reactor.cpp.i
-.PHONY : reactor.cpp.i
-
-reactor.s: reactor.cpp.s
-
-.PHONY : reactor.s
-
-# target to generate assembly for a file
-reactor.cpp.s:
-	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/reactor.cpp.s
-.PHONY : reactor.cpp.s
 
 reactor_impl.o: reactor_impl.cpp.o
 
@@ -285,6 +258,60 @@ socket_handler.cpp.s:
 	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/socket_handler.cpp.s
 .PHONY : socket_handler.cpp.s
 
+socket_internal.o: socket_internal.cpp.o
+
+.PHONY : socket_internal.o
+
+# target to build an object file
+socket_internal.cpp.o:
+	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/socket_internal.cpp.o
+.PHONY : socket_internal.cpp.o
+
+socket_internal.i: socket_internal.cpp.i
+
+.PHONY : socket_internal.i
+
+# target to preprocess a source file
+socket_internal.cpp.i:
+	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/socket_internal.cpp.i
+.PHONY : socket_internal.cpp.i
+
+socket_internal.s: socket_internal.cpp.s
+
+.PHONY : socket_internal.s
+
+# target to generate assembly for a file
+socket_internal.cpp.s:
+	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/socket_internal.cpp.s
+.PHONY : socket_internal.cpp.s
+
+tempCodeRunnerFile.o: tempCodeRunnerFile.cpp.o
+
+.PHONY : tempCodeRunnerFile.o
+
+# target to build an object file
+tempCodeRunnerFile.cpp.o:
+	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.o
+.PHONY : tempCodeRunnerFile.cpp.o
+
+tempCodeRunnerFile.i: tempCodeRunnerFile.cpp.i
+
+.PHONY : tempCodeRunnerFile.i
+
+# target to preprocess a source file
+tempCodeRunnerFile.cpp.i:
+	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.i
+.PHONY : tempCodeRunnerFile.cpp.i
+
+tempCodeRunnerFile.s: tempCodeRunnerFile.cpp.s
+
+.PHONY : tempCodeRunnerFile.s
+
+# target to generate assembly for a file
+tempCodeRunnerFile.cpp.s:
+	$(MAKE) -f CMakeFiles/Demo1.dir/build.make CMakeFiles/Demo1.dir/tempCodeRunnerFile.cpp.s
+.PHONY : tempCodeRunnerFile.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -294,15 +321,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Demo1"
 	@echo "... edit_cache"
+	@echo "... acceptor.o"
+	@echo "... acceptor.i"
+	@echo "... acceptor.s"
 	@echo "... epoll_demultiplexer.o"
 	@echo "... epoll_demultiplexer.i"
 	@echo "... epoll_demultiplexer.s"
-	@echo "... listen_handler.o"
-	@echo "... listen_handler.i"
-	@echo "... listen_handler.s"
-	@echo "... reactor.o"
-	@echo "... reactor.i"
-	@echo "... reactor.s"
 	@echo "... reactor_impl.o"
 	@echo "... reactor_impl.i"
 	@echo "... reactor_impl.s"
@@ -312,6 +336,12 @@ help:
 	@echo "... socket_handler.o"
 	@echo "... socket_handler.i"
 	@echo "... socket_handler.s"
+	@echo "... socket_internal.o"
+	@echo "... socket_internal.i"
+	@echo "... socket_internal.s"
+	@echo "... tempCodeRunnerFile.o"
+	@echo "... tempCodeRunnerFile.i"
+	@echo "... tempCodeRunnerFile.s"
 .PHONY : help
 
 

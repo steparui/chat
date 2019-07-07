@@ -6,9 +6,11 @@
 #include <sys/socket.h>
 #include <stdio.h>
 #include <new>
-#include "reactor.h"
+#include "reactor_impl.h"
 
-SocketHandler::SocketHandler(Handle fd) : _socket_fd(fd)
+SocketHandler::SocketHandler(Handle fd, ReactorImpl* reactorPtr)
+ : _socket_fd(fd),
+ m_reactorPtr(reactorPtr)
 {
     _buf = new (std::nothrow)char[MAX_SIZE];
     assert(_buf != NULL);
@@ -37,6 +39,5 @@ void SocketHandler::handle_write()
 
 void SocketHandler::handle_error()
 {
-    Reactor& r = Reactor::get_instance();
-    r.remove(this);
+    m_reactorPtr->remove(this);
 }
