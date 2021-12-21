@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <new>
 #include "reactor_impl.h"
+#include <iostream>
 
 SocketHandler::SocketHandler(Handle fd, ReactorImpl* reactorPtr)
  : _socket_fd(fd),
@@ -26,10 +27,19 @@ SocketHandler::~SocketHandler()
 void SocketHandler::handle_read()
 {
     // 粘包
-    if(read(_socket_fd, _buf, MAX_SIZE) > 0)
-    {
-        write(_socket_fd, _buf, strlen(_buf));
-    }
+    std::cout<< "Start Recv";
+	ssize_t recvByteLen = recv(_socket_fd, _buf, MAX_SIZE, 0);
+	if ( recvByteLen > 0 ) {
+        std::cout<< "Start Send";
+		send( _socket_fd, _buf, sizeof(_buf), 0);
+	} else {
+		std::cout<<"recv() failed";
+	}
+
+    //if(read(_socket_fd, _buf, MAX_SIZE) > 0)
+    //{
+    //    write(_socket_fd, _buf, strlen(_buf));
+    //}
     handle_error();
 }
 
