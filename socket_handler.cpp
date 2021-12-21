@@ -25,6 +25,7 @@ SocketHandler::~SocketHandler()
 
 void SocketHandler::handle_read()
 {
+    // 粘包
     if(read(_socket_fd, _buf, MAX_SIZE) > 0)
     {
         write(_socket_fd, _buf, strlen(_buf));

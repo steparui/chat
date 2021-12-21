@@ -41,3 +41,11 @@ void ReactorImpl::dispatch(int timeout)
 {
     _demultiplexer->wait_event(_handlers, timeout);
 }
+
+void ReactorImpl::loop()
+{
+    while(true)
+    {
+        dispatch(100);
+    }
+}

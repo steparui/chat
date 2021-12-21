@@ -14,6 +14,7 @@ public:
     int regist(EventHandler* handler, Event evt);
     void remove(EventHandler* handler);
     void dispatch(int timeout = 0);
+    void loop();
 
 private:
     EventDemultiplexer* _demultiplexer;

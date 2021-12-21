@@ -23,12 +23,10 @@ void daemon_init()
         exit(0);
     
     setsid();
-
 }
 
 int main()
 {
-
     int sockfd = -1;
     if((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     {
@@ -58,10 +56,7 @@ int main()
     EventHandler* handler = new Acceptor(listenfd, actor);
     actor->regist(handler, ReadEvent);
 
-    while(true)
-    {
-        actor->dispatch(100);
-    }
+    actor->loop();
 
     return 0;
 }
